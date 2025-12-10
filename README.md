@@ -1,16 +1,16 @@
-Hotel Polipet
+# Hotel Polipet 🐾
 
 Um projeto em Java que simula um hotel para animais, permitindo cadastrar diferentes tipos de pets e gerenciar suas informações.
 
-Funcionalidades
+# Funcionalidades 📘
 
-Cadastro de animais (cachorro, gato e pássaro)
+. Cadastro de animais (cachorro, gato e pássaro)
 
-Estrutura orientada a objetos
+. Estrutura orientada a objetos
 
-Classe principal para executar o sistema
+. Classe principal para executar o sistema
 
-Estrutura
+# Estrutura
 src/
  ├─ Main.java
  ├─ Hotel.java
@@ -21,10 +21,10 @@ src/
       ├─ Gato.java
       └─ Passaro.java
 
-Como executar
+# Como executar
 
-Abra o projeto em uma IDE Java (ex.: IntelliJ ou Eclipse)
+. Abra o projeto em uma IDE Java (ex.: IntelliJ ou Eclipse)
 
-Compile os arquivos
+. Compile os arquivos
 
-Execute o arquivo Main.java
+. Execute o arquivo Main.java
