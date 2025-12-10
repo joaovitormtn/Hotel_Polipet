@@ -1,0 +1,43 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+import entitys.Domesticavel;
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Main {
+   public Main() {
+   }
+
+   public static void main(String[] args) {
+      Hotel hotel = new Hotel();
+      Scanner sc = new Scanner(System.in);
+      boolean key = true;
+
+      do {
+         System.out.println("\nEscolha uma das opções abaixo!!\n1. Listar Animais;\n2. Somar diárias;\n3. Exibir Animais Domesticáveis;\n4. Sair;\n");
+         System.out.print("Digite a opção desejada: ");
+         int opcao = sc.nextInt();
+         switch (opcao) {
+            case 1:
+               System.out.println(hotel.listar());
+               break;
+            case 2:
+               System.out.printf("\nO custo diário dos animais é R$%.2f\n", hotel.somar());
+               break;
+            case 3:
+               StringBuilder sb = new StringBuilder();
+               Iterator var6 = hotel.filtrar().iterator();
+
+               while(var6.hasNext()) {
+                  Domesticavel a = (Domesticavel)var6.next();
+                  sb.append("-----------------------\n").append(a.toString()).append("Iteração: " + a.interagir()).append("\n\n");
+               }
+
+               System.out.printf("\nOs animais domesticáveis são!!!\n-------------------------------\n%s\n", sb.toString());
+               break;
+            case 4:
+               key = false;
+         }
+      } while(key);
+
+   }
+}
